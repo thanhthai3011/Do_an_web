@@ -1,0 +1,14 @@
+/* OUR TEAM  */
+.our-team h1{
+    padding-top:20px ;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .our-team .card-our-team:hover{
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s;
+  }

@@ -1,0 +1,69 @@
+/* .testimonials */
+.testimonials h1{
+    padding-top:20px ;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .testimonials h1::after{
+    content:'';
+    background: black;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+  }
+  .testimonials  .row{
+    margin-top: 30px ;
+  }
+  .testimonials  .col-md-4{
+    margin: 40px auto;
+  }
+  .testimonials  .profile {
+    padding: 70px 10px 10px;
+    background-color: #efefef;
+  }
+  .testimonials  .profile img{
+    top: -60px;
+    position: absolute;
+    left: calc (50% -50%);
+    border: 10px solid white;
+  }
+  .testimonials .user{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  .testimonials span {
+    color: #333;
+    font-size: 12px;
+  }
+  .testimonials blockquote{
+    font-size: 16px;
+    line-height: 30px;
+  }
+  /* blockquote::before{
+    content: '\93';
+    font-size: 50px;
+    position: relative;
+    color: #ff9800;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+  }
+  blockquote::af{
+    content: '\94';
+    font-size: 50px;
+    position: relative;
+    color: #ff9800;
+    line-height: 20px;
+    bottom: -15px;
+    left: 5px;
+  } */
+  .testimonials .profile:hover{
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s;
+  }

@@ -1,0 +1,20 @@
+/* TOP CATEGORIES  */
+.top-categories{
+  margin-top: 30px;
+}
+.top-categories .top-categories-group .top-categories--items img{
+  max-width: 15%;
+}
+
+.top-categories .top-categories-group .top-categories--items {
+  border: #ddd solid 1px;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+
+.top-categories .top-categories-group .top-categories--items:hover {
+  transition: 0.5s;
+  background-color: #00fa9a;
+  cursor: pointer;
+}

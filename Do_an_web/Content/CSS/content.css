@@ -1,0 +1,12 @@
+/* CONTENT  */
+
+.content-courses .content-items .background-content{
+    background-color: white;
+    margin: 20px 0px;
+  }
+  .content-courses .content-items .background-content .img-content img{
+    width: 50%;
+    height: 50%;
+    
+  }
+  

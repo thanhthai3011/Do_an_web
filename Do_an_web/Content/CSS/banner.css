@@ -1,0 +1,22 @@
+/* BANNER  */
+.screen_content{
+    margin-top: 100px;
+}
+.screen_content_picture img{
+    width: 100%;
+}
+.screen_content_picture_item{
+    margin: 30px 0  ;
+}
+.screen_content_picture_item{
+    text-align: center;
+}
+.screen_content_picture_item img{
+  width: 60%;
+  display: inline-block;
+  margin: 0 auto;
+}
+.btn-description {
+    background-color: #00fa9a;
+    padding: 10px 30px;
+}
