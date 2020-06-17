@@ -327,6 +327,7 @@
     <Content Include="Content\img\undraw_web_search_eetr.png" />
     <Content Include="Content\img\undraw_web_search_eetr.svg" />
     <Content Include="Content\img\verified.png" />
+    <Content Include="Course.sql" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
