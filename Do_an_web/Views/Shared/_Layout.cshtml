@@ -1,32 +1,136 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    @*<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title - My ASP.NET Application</title>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+    <title>Khóa học online</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font-awsome  -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font google  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400,700&display=swap" rel="stylesheet">
+    <!-- Link CSS  -->
+    <link rel="stylesheet" href="~/Content/CSS/main.css">
+    <link rel="stylesheet" href="~/Content/CSS/header.css">
+    <link rel="stylesheet" href="./CSS/banner.css">
+    <link rel="stylesheet" href="./CSS/content.css">
+    <link rel="stylesheet" href="./CSS/top-categories.css">
+    <link rel="stylesheet" href="./CSS/testimonials.css">
+    <link rel="stylesheet" href="./CSS/our-team.css">
+
+   
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Trang chủ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
+        </div>*@
+    <header>
+        <div class="container-fluid">
+            <div class="header_navbar">
+                <nav class=" navbar_heading navbar navbar-expand-md navbar-light bg-white">
+                    <a class="navbar-brand" href="#" target="blank">
+                        <img src="~/Content/img/logo/logo.svg" alt="logo" style="width: 100px;">
+                    </a>
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+                            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    @*@Html.ActionLink("Trang chủ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">@Html.ActionLink("Trang chủ", "Index", "Home")<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+
+                            <li class="nav-item dropdown dropdown-navbar">
+                                <a class="nav-link dropdown-toggle dropdown-course text-dark " data-toggle="dropdown" href="#">
+                                    Khóa học
+                                </a>
+                                <div class="dropdown-menu dropdown-content bg-light">
+                                    <a class="dropdown-item" href="#">Lập trình</a>
+                                    <a class="dropdown-item" href="#">Kinh doanh</a>
+                                    <a class="dropdown-item" href="#">Tài chính</a>
+
+                                    <a class="dropdown-item" href="#">Phát triển bản thân</a>
+                                    <a class="dropdown-item" href="#">Thiết kế</a>
+                                    <a class="dropdown-item" href="#">Marketing</a>
+                                    <a class="dropdown-item" href="#">Nâng tầm phong cách sống</a>
+                                    <a class="dropdown-item" href="#">Nhiếp ảnh</a>
+                                    <a class="dropdown-item" href="#">Sức khỏe</a>
+                                    <a class="dropdown-item" href="#">Âm nhạc</a>
+                                </div>
+                            </li>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">@Html.ActionLink("Blog", "About", "Home")<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">@Html.ActionLink("Sự kiện", "Contact", "Home")<span class="sr-only">(current)</span></a>
+                            </li>
+
+
+                        </ul>
+                        <!-- gio hang -->
+                        <ul class="navbar-nav ml-md-auto pr-3">
+                            <li class="nav-item active">
+                                <a class="nav-link text-dark" href="#">
+                                    <i class="fa fa-shopping-cart"></i><span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- ------------------------------------------ -->
+
+                        <div class="d-flex justify-content-start">
+
+                            <button class="btn btn-danger border border-dark rounded-0 mx-1" style="padding: 0 30px;"><a href="signup.html" class="text-white" target="_blank">Đăng kí</a></button>
+
+                            <button class="btn btn-light border border-dark rounded-0 text-secondary"><a href="login.html" class="text-secondary" target="_blank">Đăng nhập</a></button>
+                        </div>
+
+                    </div>
+                </nav>
             </div>
         </div>
-    </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -35,8 +139,78 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
+
+
+    <button id="back-to-top-btn"><i class="fa fa-angle-double-up"></i></button>
+    <script type="text/javascript">
+
+        const backToTopButton = document.querySelector("#back-to-top-btn");
+
+        window.addEventListener("scroll", scrollFunction);
+
+        function scrollFunction() {
+            if (window.pageYOffset > 300) { // Show backToTopButton
+                if (!backToTopButton.classList.contains("btnEntrance")) {
+                    backToTopButton.classList.remove("btnExit");
+                    backToTopButton.classList.add("btnEntrance");
+                    backToTopButton.style.display = "block";
+                }
+            }
+            else { // Hide backToTopButton
+                if (backToTopButton.classList.contains("btnEntrance")) {
+                    backToTopButton.classList.remove("btnEntrance");
+                    backToTopButton.classList.add("btnExit");
+                    setTimeout(function () {
+                        backToTopButton.style.display = "none";
+                    }, 250);
+                }
+            }
+        }
+
+        backToTopButton.addEventListener("click", smoothScrollBackToTop);
+
+        // function backToTop() {
+        //   window.scrollTo(0, 0);
+        // }
+
+        function smoothScrollBackToTop() {
+            const targetPosition = 0;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            const duration = 750;
+            let start = null;
+
+            window.requestAnimationFrame(step);
+
+            function step(timestamp) {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+                window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+                if (progress < duration) window.requestAnimationFrame(step);
+            }
+        }
+
+        function easeInOutCubic(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t * t + b;
+            t -= 2;
+            return c / 2 * (t * t * t + 2) + b;
+        };
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    @*@Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    @RenderSection("scripts", required: false)*@
 </body>
 </html>

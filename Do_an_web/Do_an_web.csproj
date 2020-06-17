@@ -45,10 +45,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -120,9 +128,42 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TempController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\gallery.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\menu.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\service.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sub_menu.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\teacher.cs">
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -131,12 +172,187 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\CSS\banner.css" />
+    <Content Include="Content\CSS\blog.css" />
+    <Content Include="Content\CSS\content.css" />
+    <Content Include="Content\CSS\footer.css" />
+    <Content Include="Content\CSS\header.css" />
+    <Content Include="Content\CSS\login.css" />
+    <Content Include="Content\CSS\main.css" />
+    <Content Include="Content\CSS\our-team.css" />
+    <Content Include="Content\CSS\owl.carousel.css" />
+    <Content Include="Content\CSS\owl.theme.default.min.css" />
+    <Content Include="Content\CSS\testimonials.css" />
+    <Content Include="Content\CSS\top-categories.css" />
+    <Content Include="Content\img\20191209online.jpg" />
+    <Content Include="Content\img\about-bg.jpg" />
+    <Content Include="Content\img\about-bg2.png" />
+    <Content Include="Content\img\about.png" />
+    <Content Include="Content\img\adminbg.jpg" />
+    <Content Include="Content\img\avatar.png" />
+    <Content Include="Content\img\banner-01.png" />
+    <Content Include="Content\img\banner-02.png" />
+    <Content Include="Content\img\banner-03.png" />
+    <Content Include="Content\img\banner-04.png" />
+    <Content Include="Content\img\Banner.svg" />
+    <Content Include="Content\img\Banner2.svg" />
+    <Content Include="Content\img\blog-banner.jpg" />
+    <Content Include="Content\img\blog1.jpeg" />
+    <Content Include="Content\img\blog2.jpeg" />
+    <Content Include="Content\img\blog3.jpeg" />
+    <Content Include="Content\img\blog4.jpeg" />
+    <Content Include="Content\img\blog5.jpeg" />
+    <Content Include="Content\img\blog6.jpeg" />
+    <Content Include="Content\img\blog7.jpeg" />
+    <Content Include="Content\img\blog8.jpeg" />
+    <Content Include="Content\img\breadcrumb.png" />
+    <Content Include="Content\img\comment.jpeg" />
+    <Content Include="Content\img\countdown.png" />
+    <Content Include="Content\img\default-image.jpg" />
+    <Content Include="Content\img\developer-background-611.jpg" />
+    <Content Include="Content\img\event-bg-1.jpg" />
+    <Content Include="Content\img\event-bg-2.png" />
+    <Content Include="Content\img\event-bg-3.png" />
+    <Content Include="Content\img\event-icon.png" />
+    <Content Include="Content\img\event-speaker1.jpg" />
+    <Content Include="Content\img\event-speaker2.jpg" />
+    <Content Include="Content\img\event-speaker3.jpg" />
+    <Content Include="Content\img\event-speaker4.jpg" />
+    <Content Include="Content\img\event-speaker5.jpg" />
+    <Content Include="Content\img\event-speaker6.jpg" />
+    <Content Include="Content\img\event-speaker7.jpg" />
+    <Content Include="Content\img\event-speaker8.jpg" />
+    <Content Include="Content\img\founder1.jpg" />
+    <Content Include="Content\img\googleicon.png" />
+    <Content Include="Content\img\headerbg.png" />
+    <Content Include="Content\img\icons.7bb95b81.svg" />
+    <Content Include="Content\img\image.png" />
+    <Content Include="Content\img\img top categories\ads.svg" />
+    <Content Include="Content\img\img top categories\bars-chart.svg" />
+    <Content Include="Content\img\img top categories\computing.svg" />
+    <Content Include="Content\img\img top categories\house-sketch.svg" />
+    <Content Include="Content\img\img top categories\interface %281%29.svg" />
+    <Content Include="Content\img\img top categories\interface.svg" />
+    <Content Include="Content\img\img top categories\personal.svg" />
+    <Content Include="Content\img\img top categories\tools-and-utensils.svg" />
+    <Content Include="Content\img\img top categories\web-development.png" />
+    <Content Include="Content\img\img-founder\71636738_1269702436545610_2047348182005841920_n.jpg" />
+    <Content Include="Content\img\img-founder\developer-background-611.jpg" />
+    <Content Include="Content\img\img-founder\founder1.jpg" />
+    <Content Include="Content\img\img-students\7482cd28111349387214ea8fa848d3dc.jpg" />
+    <Content Include="Content\img\img-students\dinh_dat.jpg" />
+    <Content Include="Content\img\img-students\johny_sins_60827672_449763422517335_1474107158020696456_n-1024x1024.jpg" />
+    <Content Include="Content\img\img-students\minh_quan.jpg" />
+    <Content Include="Content\img\img-students\ngoc_anh.jpg" />
+    <Content Include="Content\img\img-top-categories\ads.svg" />
+    <Content Include="Content\img\img-top-categories\bars-chart.svg" />
+    <Content Include="Content\img\img-top-categories\computing.svg" />
+    <Content Include="Content\img\img-top-categories\house-sketch.svg" />
+    <Content Include="Content\img\img-top-categories\interface %281%29.svg" />
+    <Content Include="Content\img\img-top-categories\interface.svg" />
+    <Content Include="Content\img\img-top-categories\personal.svg" />
+    <Content Include="Content\img\img-top-categories\tools-and-utensils.svg" />
+    <Content Include="Content\img\img-top-categories\web-development.png" />
+    <Content Include="Content\img\img-university\1200px-Logo-hcmut.svg.png" />
+    <Content Include="Content\img\img-university\2-removebg.png" />
+    <Content Include="Content\img\img-university\2-test1-removebg.png" />
+    <Content Include="Content\img\img-university\2.jpg" />
+    <Content Include="Content\img\img-university\brasol-removebg-preview.png" />
+    <Content Include="Content\img\img-university\brasol.vn-logo-hutech-avatars-000070252691-ftki2r-t500x500.jpg" />
+    <Content Include="Content\img\img-university\kisspng-hutech-university-amity-university-information-tec-danh-sch-thng-bo-tin-s-hutech-5c4d440d6bc996.2327077815485675654415.jpg" />
+    <Content Include="Content\img\item1.jpg" />
+    <Content Include="Content\img\item10.jpg" />
+    <Content Include="Content\img\item11.jpg" />
+    <Content Include="Content\img\item12.jpg" />
+    <Content Include="Content\img\item13.jpg" />
+    <Content Include="Content\img\item14.jpg" />
+    <Content Include="Content\img\item15.jpg" />
+    <Content Include="Content\img\item16.jpg" />
+    <Content Include="Content\img\item17.jpg" />
+    <Content Include="Content\img\item18.jpg" />
+    <Content Include="Content\img\item19.jpg" />
+    <Content Include="Content\img\item2.jpg" />
+    <Content Include="Content\img\item20.jpg" />
+    <Content Include="Content\img\item21.jpg" />
+    <Content Include="Content\img\item22.jpg" />
+    <Content Include="Content\img\item23.jpg" />
+    <Content Include="Content\img\item24.jpg" />
+    <Content Include="Content\img\item25.jpg" />
+    <Content Include="Content\img\item26.jpg" />
+    <Content Include="Content\img\item27.jpg" />
+    <Content Include="Content\img\item28.jpg" />
+    <Content Include="Content\img\item29.jpg" />
+    <Content Include="Content\img\item3.jpg" />
+    <Content Include="Content\img\item30.jpg" />
+    <Content Include="Content\img\item31.jpg" />
+    <Content Include="Content\img\item32.jpg" />
+    <Content Include="Content\img\item4.jpg" />
+    <Content Include="Content\img\item5.jpg" />
+    <Content Include="Content\img\item6.jpg" />
+    <Content Include="Content\img\item7.jpg" />
+    <Content Include="Content\img\item8.jpg" />
+    <Content Include="Content\img\item9.jpg" />
+    <Content Include="Content\img\Login\avatar.svg" />
+    <Content Include="Content\img\Login\bg.svg" />
+    <Content Include="Content\img\Login\wave.png" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\logo2.png" />
+    <Content Include="Content\img\logo\logo-removebg-preview.png" />
+    <Content Include="Content\img\logo\logo.png" />
+    <Content Include="Content\img\logo\logo.svg" />
+    <Content Include="Content\img\main-pic.c748e4bf.svg" />
+    <Content Include="Content\img\notfoundbg.jpg" />
+    <Content Include="Content\img\payment-option.png" />
+    <Content Include="Content\img\payment.png" />
+    <Content Include="Content\img\paypal.jpg" />
+    <Content Include="Content\img\popularicon.jpg" />
+    <Content Include="Content\img\quote1.png" />
+    <Content Include="Content\img\quote2.png" />
+    <Content Include="Content\img\teacher.jpg" />
+    <Content Include="Content\img\teacher2.jpg" />
+    <Content Include="Content\img\teacher3.jpg" />
+    <Content Include="Content\img\teacher4.jpg" />
+    <Content Include="Content\img\teacher5.jpg" />
+    <Content Include="Content\img\teacher6.jpg" />
+    <Content Include="Content\img\team-member-3.jpg" />
+    <Content Include="Content\img\team-member-5.jpg" />
+    <Content Include="Content\img\team-member-6.jpg" />
+    <Content Include="Content\img\testimonial-3.jpg" />
+    <Content Include="Content\img\testimonial.png" />
+    <Content Include="Content\img\undraw_fast_loading_0lbh.png" />
+    <Content Include="Content\img\undraw_fast_loading_0lbh.svg" />
+    <Content Include="Content\img\undraw_online_video_ivvq.svg" />
+    <Content Include="Content\img\undraw_site_stats_l57q.svg" />
+    <Content Include="Content\img\undraw_video_influencer_9oyy.png" />
+    <Content Include="Content\img\undraw_web_search_eetr.png" />
+    <Content Include="Content\img\undraw_web_search_eetr.svg" />
+    <Content Include="Content\img\verified.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\img\img top categories\debug.log" />
+    <Content Include="Content\img\img-top-categories\debug.log" />
+    <EntityDeploy Include="Models\Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Views\web.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -147,6 +363,8 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\JS\owl.carousel.js" />
+    <Content Include="Scripts\JS\owl.carousel.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -165,10 +383,15 @@
     <Content Include="Views\Shared\MyLayout.cshtml" />
     <Content Include="Views\About.cshtml" />
     <Content Include="Views\Blog.cshtml" />
+    <Content Include="Scripts\JS\jquery.min.map" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Temp\getMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -182,6 +405,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
