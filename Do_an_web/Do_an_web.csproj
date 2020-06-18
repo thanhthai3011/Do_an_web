@@ -129,6 +129,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TempController.cs" />
@@ -175,6 +176,8 @@
     <Content Include="Content\CSS\banner.css" />
     <Content Include="Content\CSS\blog.css" />
     <Content Include="Content\CSS\content.css" />
+    <Content Include="Content\CSS\css\sb-admin-2.css" />
+    <Content Include="Content\CSS\css\sb-admin-2.min.css" />
     <Content Include="Content\CSS\footer.css" />
     <Content Include="Content\CSS\header.css" />
     <Content Include="Content\CSS\login.css" />
@@ -354,6 +357,7 @@
       <DependentUpon>Model.edmx</DependentUpon>
     </Content>
     <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Admin\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -364,8 +368,14 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\JS\demo\chart-area-demo.js" />
+    <Content Include="Scripts\JS\demo\chart-bar-demo.js" />
+    <Content Include="Scripts\JS\demo\chart-pie-demo.js" />
+    <Content Include="Scripts\JS\demo\datatables-demo.js" />
     <Content Include="Scripts\JS\owl.carousel.js" />
     <Content Include="Scripts\JS\owl.carousel.min.js" />
+    <Content Include="Scripts\JS\sb-admin-2.js" />
+    <Content Include="Scripts\JS\sb-admin-2.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -387,10 +397,11 @@
     <Content Include="Scripts\JS\jquery.min.map" />
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Temp\getMenu.cshtml" />
+    <Content Include="Views\AdminLayout\AdminLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Assets\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
   </ItemGroup>
