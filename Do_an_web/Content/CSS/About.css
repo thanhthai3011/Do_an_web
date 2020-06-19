@@ -1,0 +1,157 @@
+
+*{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-family: 'Roboto slab',sans-serif;
+}
+.about__header .header__wrapper .banner {
+    background: url(/Content/img/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 70vh;
+}
+
+/*content*/
+.about__header .header__wrapper .meta__purple {
+    background: linear-gradient(45deg, #992e6b 0%, #ce4192 100%);
+}
+
+.about__header .header__wrapper .about__meta {
+    display: flex;
+    justify-content: flex-start;
+    padding: 3% 5%;
+}
+.about__header .header__wrapper .about__meta .meta__icon {
+    font-size: 4rem;
+}
+.about__header .header__wrapper .about__meta .meta__info {
+    margin-left: 3rem;
+}
+
+/* RED  */
+.about__header .header__wrapper .meta__red {
+    background: linear-gradient(45deg, #fb3461 0%, #fd5443 100%);
+}
+
+.about__header .header__wrapper .about__meta {
+    display: flex;
+    justify-content: flex-start;
+    padding: 3% 5%;
+}
+/* Orange */
+.about__header .header__wrapper .meta__orange {
+    background: linear-gradient(45deg, #ff7925 0%, #febe09 100%);
+}
+
+
+.about__header .header__wrapper .about__meta {
+    display: flex;
+    justify-content: flex-start;
+    padding: 3% 5%;
+}
+/* About us  */
+.about__us {
+    margin: 5% 0;
+    color: #000000;
+}
+ /* button  */
+.about__us .contact_content .blockquote {
+    margin: 5% 0;
+    font-size: .9rem;
+    position: relative;
+    color: #848484;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 25px;
+    text-indent: 5%;
+}
+.about__us .contact_content .contact__btn {
+    background-color: transparent;
+    color: #666666;
+    border: 1px solid #666666;
+    width: 40%;
+    height: 46px;
+    font-weight: bold;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+/* certification  */
+.certification {
+    background: url(/Content/img/about-bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 45vh;
+}
+.certification .certi__title {
+    text-align: center;
+    padding: 5% 0;
+    color: white;
+}
+.certification .certi__content {
+    text-align: center;
+    color: white;
+}
+/*Button */
+.certification .certi__button {
+    text-align: center;
+    margin-top: 3%;
+}
+.certification .certi__button .certi__btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    width: 20%;
+    height: 46px;
+    font-weight: bold;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+/* Team  */
+.team {
+    margin: 5% 0;
+    color: #000000;
+}
+.team h4 {
+    font-weight: bold;
+    padding: 2% 0;
+}
+.team .team__item {
+    border: 1px solid #ebebeb;
+}
+.team .team__item .team__image {
+    position: relative;
+    overflow: hidden;
+}
+
+.team .team__item .team__image .team__social {
+    position: absolute;
+    bottom: -18%;
+    left: 2%;
+    width: 96%;
+    background-color: #f1f1f1;
+    transition: all .4s;
+    z-index: 100;
+}
+.team .team__content {
+    padding: 5%;
+}
+.team h5 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 2%;
+}
+.team .team__content p {
+    color: #848484;
+    font-style: italic;
+}
+.about__us .contact_content .contact__btn:hover {
+    opacity: .9;
+}

@@ -28,5 +28,9 @@ namespace Do_an_web.Controllers
 
             return View();
         }
+        public ActionResult Blog()
+        {
+            return View();
+        }
     }
 }

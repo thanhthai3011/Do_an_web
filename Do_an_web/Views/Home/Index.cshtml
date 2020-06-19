@@ -1,31 +1,492 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<head>
+    <title>Khóa học online</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font-awsome  -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font google  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400,700&display=swap" rel="stylesheet">
+    <!-- Link CSS  -->
+    <link rel="stylesheet" href="~/Content/CSS/main.css">
+    <link rel="stylesheet" href="~/Content/CSS/header.css">
+    <link rel="stylesheet" href="~/Content/CSS/banner.css">
+    <link rel="stylesheet" href="~/Content/CSS/content.css">
+    <link rel="stylesheet" href="~/Content/CSS/top-categories.css">
+    <link rel="stylesheet" href="~/Content/CSS/testimonials.css">
+    <link rel="stylesheet" href="~/Content/CSS/our-team.css">
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="screen_content">
+                <div class="row">
+                    <div class="screen_content_description col-md-12 col-xl-3 ">
+                        <span style="font-size: 50px;">Xin chào !</span>
+                        <h1>Chào mừng bạn tới website của chúng tôi</h1>
+                        <p>
+                            Học mọi thứ bạn muốn mọi lúc, mọi nơi với tất cả các nghề nghiệp và kỹ năng nổi bật nhất hiện nay.
+                        </p>
+                        <a href="">
+                            <button type="button" class="btn-description btn btn-outline-secondary">
+                                <h6>Chi tiết</h6>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="screen_content_picture col-md-12 col-xl-9">
+                        <img src="~/Content/img/main-pic.c748e4bf.svg" alt="photo" style="width: 100%; height: 100%;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="screen_content_picture_item col-md-12">
+                        <img src="~/Content/img/icons.7bb95b81.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center form-group">
+                <div class="col-9 ">
+                    <input type="text" placeholder="What do you want to learn?" class="searching-anything form-control w-80">
+                </div>
+                <div class="col-3">
+                    <a href="">
+                        <button class="btn btn-outline-info w-100" type="button">Search</button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 29/4/2020 cần fix lại  -->
+    <!-- Courses-->
+    <section>
+        <div class="container">
+            <div class="content_info ">
+                <h4><b>Lựa chọn các khóa học uy tín nhât hiện nay</b></h4>
+                <p>
+                    Chọn từ 1.000 khóa học video trực tuyến với các bổ sung mới được xuất bản mỗi tháng
+                </p>
+            </div>
+            <ul class="nav nav-tabs text-dark" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#business">Kinh doanh</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#design">Thiết kế</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#photography">Nhiếp ảnh</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#development">Lập trình</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#marketing">Marketing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#it-software">Tài chính </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#personal">Phát triển bản thân</a>
+                </li>
+            </ul>
+
+
+
+    </section>
+    <section>
+        <div class="content-courses container-fluid bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="content-items col-md-4">
+                        <div class="background-content">
+                            <div>
+                                <div class="img-content">
+                                    <img src="~/Content/img/undraw_fast_loading_0lbh.svg" alt="photo">
+                                </div>
+                                <br>
+                                <div>
+                                    <h6><b>Học với tốc độ của bạn</b></h6>
+                                    <p>
+                                        Tận hưởng truy cập trọn đời vào các khóa học trên trang web và ứng dụng của K2T
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="content-items col-md-4">
+                        <div class="background-content">
+                            <div>
+                                <div class="img-content">
+                                    <img src="~/Content/img/undraw_site_stats_l57q.svg" alt="photo">
+                                </div>
+                                <div>
+                                    <br>
+                                    <h6><b>Học hỏi từ các chuyên gia giàu kinh nghiệm</b></h6>
+                                    <p>
+                                        Chọn từ những người hướng dẫn hàng đầu trên khắp cả nước và học hỏi từ họ
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="content-items col-md-4">
+                        <div class="background-content">
+                            <div>
+                                <div class="img-content">
+                                    <img src="~/Content/img/undraw_web_search_eetr.svg" alt="photo">
+                                </div>
+                                <div>
+                                    <br>
+                                    <h6><b>Tìm các khóa học video về hầu hết mọi chủ đề</b></h6>
+                                    <p>
+                                        Xây dựng thư viện cho sự nghiệp và sự phát triển cá nhân của bạn
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOP- CATEGORIES  -->
+    <!-- style="border-bottom: 1px solid  rgba(0,0,0,.1) ;" -->
+    <section class="top-categories my-5">
+        <div class="container  ">
+            <h5 class="top-categories--header "><b>Danh mục đang hot</b></h5>
+            <div class="top-categories-group row">
+
+                <div class="top-categories--items--col col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="top-categories--items">
+                        <a href="#">
+                            <img src="~/Content/img/img top categories/interface.svg" alt="">
+                            <span>Lập trình</span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="top-categories--items--col col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="top-categories--items">
+                        <a href="#">
+                            <img src="~/Content/img/img top categories/bars-chart.svg" alt="">
+                            <span>Kinh doanh</span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="top-categories--items--col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="top-categories--items">
+                        <a href="">
+                            <img src="~/Content/img/img top categories/computing.svg" alt="">
+                            <span>Tài chính</span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="top-categories--items--col col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="top-categories--items">
+                        <a href="">
+                            <img src="~/Content/img/img top categories/house-sketch.svg" alt="">
+                            <span>Thiết kế</span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="top-categories--items--col col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="top-categories--items">
+                        <a href="">
+                            <img src="~/Content/img/img top categories/ads.svg" alt="">
+                            <span>Marketing</span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="top-categories--items--col col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="top-categories--items">
+                        <a href="">
+                            <img src="~/Content/img/img top categories/personal.svg" alt="">
+                            <span>Phát triển bản thân </span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="top-categories--items--col col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="top-categories--items">
+                        <a href="">
+                            <img src="~/Content/img/img top categories/tools-and-utensils.svg" alt="">
+                            <span>Nhiếp ảnh<span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="top-categories--items--col col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="top-categories--items">
+                        <a href="">
+                            <img src="~/Content/img/img top categories/interface (1).svg" alt="">
+                            <span>Âm nhạc</span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- WHAT OUR STUDENT HAVE TO SAY   -->
+    <section class="testimonials bg-light">
+        <div class="container">
+            <h1>Testimonials</h1>
+            <!-- <p class="text-center">What our students have to say</p> -->
+            <h3 class="text-center">What our students have to say</h3>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="profile">
+                        <img src="~/Content/img/img-students/dinh_dat.jpg" alt="" class="user">
+                        <blockquote>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ab est nihil maiores provident. Culpa delectus mollitia enim minus hic fugit officiis ullam, possimus repellat sit repudiandae architecto harum  "</blockquote>
+                        <h3>Đinh Đạt</h3> <span>Sinh viên năm 3 Hutech</span>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="profile">
+                        <img src="~/Content/img/img-students/minh_quan.jpg" alt="" class="user">
+                        <blockquote>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ab est nihil maiores provident. Culpa delectus mollitia enim minus hic fugit officiis ullam, possimus repellat sit repudiandae architecto harum "</blockquote>
+                        <h3>Minh Quân</h3> <span>Sinh viên năm 3 Hutech</span>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="profile">
+                        <img src="~/Content/img/img-students/ngoc_anh.jpg" alt="" class="user  ">
+                        <blockquote>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ab est nihil maiores provident. Culpa delectus mollitia enim minus hic fugit officiis ullam, possimus repellat sit repudiandae architecto harum "</blockquote>
+                        <h3>Ngọc Anh</h3> <span>Sinh viên năm 3 Hutech</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER  -->
+    <div class="container-fluid bg-light mt-5" style="border: 1px solid rgba(0,0,0,.1);">
+        <div class=" container  content-trusted">
+            <h5 class="text text-center col-12 py-3">Trusted by universities </h5>
+            <div class="d-flex justify-content-around">
+                <img src="~/Content/img/img-university/1200px-Logo-hcmut.svg.png" alt="" style="width: 10%; padding: 30px 0;">
+                <img src="~/Content/img/img-university/brasol-removebg-preview.png" alt=""
+                     style="width: 10%;  padding: 30px 0;">
+                <img src="~/Content/img/img-university/2-test1-removebg.png" alt="" style="width: 10%;  padding: 30px 0;">
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+
+    <footer class="page-footer font-small blue-grey lighten-5  ">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3 dark-grey-text">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 col-6 mb-4 mt-4 ">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">DoubleT company</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 160px;">
+                    <p>
+                        <a class="dark-grey-text font-weight-bold" href="#!">DoubleT for Business</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text font-weight-bold" href="#!">Teach on DoubleT</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text " href="#!">DoubleT app</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">About us</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 col-6 mx-auto mb-4  mt-4 ">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Products</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 90px;">
+
+                    <p>
+                        <a class="dark-grey-text" href="#!">MDBootstrap</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">MDWordPress</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">BrandFlow</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 col-6 mx-auto mb-4  mt-4 text-dark ">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold ">Useful links</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 120px;">
+                    <p>
+                        <a class="dark-grey-text" href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Help</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 col-6 mx-auto mb-md-0 mb-4  mt-4 text-dark ">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 75px;">
+                    <p>
+                        <i class="fa fa-home mr-3"></i>HCM 700000, VN
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i>doublet@gmail.com
+                    </p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i>+ 09 04 20 70 62
+                    </p>
+                    <p>
+                        <i class="fa fa-fax mr-3"></i>+ 028 35 15 70 88
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <hr>
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="footer-copyright text-left text-black-50 py-3 ">
+                    © 2020 Copyright:
+                    <a class="dark-grey-text pl-2" href="#"> Double'T, Inc</a>
+                </div>
+                <div class="footer-media">
+                    <p class="font-weight-bold text-center">Follow us on </p>
+                    <div class="media-social">
+                        <a class="p-2" href=""><i class="fa fa-facebook" style="color: #4267B2;"></i></a>
+                        <a class="p-2" href=""><i class="fa fa-twitter" style="color: #00A6E9;"></i></a>
+                        <a class="p-2" href=""><i class="fa fa-instagram" style="color: #F56040;"></i></a>
+                        <a class="p-2" href=""><i class="fa fa-youtube" style="color: #F70000;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+        </div>
+
+    </footer>
+    <button id="back-to-top-btn"><i class="fa fa-angle-double-up"></i></button>
+    <script type="text/javascript">
+
+        const backToTopButton = document.querySelector("#back-to-top-btn");
+
+        window.addEventListener("scroll", scrollFunction);
+
+        function scrollFunction() {
+            if (window.pageYOffset > 300) { // Show backToTopButton
+                if (!backToTopButton.classList.contains("btnEntrance")) {
+                    backToTopButton.classList.remove("btnExit");
+                    backToTopButton.classList.add("btnEntrance");
+                    backToTopButton.style.display = "block";
+                }
+            }
+            else { // Hide backToTopButton
+                if (backToTopButton.classList.contains("btnEntrance")) {
+                    backToTopButton.classList.remove("btnEntrance");
+                    backToTopButton.classList.add("btnExit");
+                    setTimeout(function () {
+                        backToTopButton.style.display = "none";
+                    }, 250);
+                }
+            }
+        }
+
+        backToTopButton.addEventListener("click", smoothScrollBackToTop);
+
+        // function backToTop() {
+        //   window.scrollTo(0, 0);
+        // }
+
+        function smoothScrollBackToTop() {
+            const targetPosition = 0;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            const duration = 750;
+            let start = null;
+
+            window.requestAnimationFrame(step);
+
+            function step(timestamp) {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+                window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+                if (progress < duration) window.requestAnimationFrame(step);
+            }
+        }
+
+        function easeInOutCubic(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t * t + b;
+            t -= 2;
+            return c / 2 * (t * t * t + 2) + b;
+        };
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+
+<!-- Footer -->
+
