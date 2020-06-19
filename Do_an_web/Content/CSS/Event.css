@@ -1,0 +1,205 @@
+.events {
+    font-family: 'Roboto', sans-serif;
+    background: url(../img/event-bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    z-index: 100;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: white;
+    color: white;
+}
+.events .countdown__wrapper .countdown__event .countdown__timer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 700;
+}
+/* TIME  */
+.events .countdown__wrapper .countdown__event .countdown__title {
+    margin: 1rem 0;
+    font-weight: 900;
+    line-height: 1.2;
+    font-size: 4rem;
+}
+.events .countdown__wrapper .countdown__event .countdown__timer .countdown__section .countdown__period {
+    font-size: 1.5rem;
+    margin-top: -1rem;
+}
+.events .countdown__wrapper .countdown__event .countdown__timer .countdown__section .countdown__days {
+    color: #fff200;
+}
+
+
+.events .countdown__wrapper .countdown__event .countdown__timer .countdown__section .countdown__amount {
+    font-size: 4rem;
+}
+.events .countdown__wrapper .countdown__event .countdown__timer .countdown__section .countdown__period {
+    font-size: 1.5rem;
+    margin-top: -1rem;
+}
+
+.events .countdown__wrapper .countdown__event .countdown__timer .countdown__section {
+    margin-right: 4rem;
+}
+.events .countdown__wrapper .countdown__event .countdown__timer .countdown__section .countdown__hours {
+    color: #ff8a00;
+}
+
+.events .countdown__wrapper .countdown__event .countdown__timer .countdown__section .countdown__amount {
+    font-size: 4rem;
+}
+
+.events .countdown__wrapper .countdown__event .countdown__timer .countdown__section .countdown__minutes {
+    color: #00b9ff;
+}
+
+.events .countdown__wrapper .countdown__event .countdown__timer .countdown__section .countdown__amount {
+    font-size: 4rem;
+}
+.events .countdown__wrapper .countdown__event .countdown__timer .countdown__section .countdown__seconds {
+    color: #8dc63f;
+}
+
+
+.events .countdown__wrapper .countdown__event .countdown__timer .countdown__section .countdown__amount {
+    font-size: 4rem;
+}
+.events .countdown__wrapper .countdown__event .countdown__title {
+    margin: 1rem 0;
+    font-weight: 900;
+    line-height: 1.2;
+    font-size: 4rem;
+}
+.events .countdown__wrapper .countdown__event .countdown__subtitle {
+    font-weight: 700;
+}
+
+/* Ticket  */
+.ticket {
+    font-family: 'Roboto', sans-serif;
+    padding: 6% 0;
+    background-color: #ffffff;
+}
+.ticket .ticket__wrapper .ticket__left .ticket__image {
+    width: 100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.ticket .ticket__wrapper .ticket__right .ticket__content .ticket__title {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #92278f;
+}
+.ticket .ticket__wrapper .ticket__right .ticket__content .ticket__sub__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0a0a0a;
+}
+.ticket .ticket__wrapper .ticket__right p {
+    font-weight: 400;
+    color: #333;
+    font-size: 1rem;
+    padding: 3% 0;
+}
+/* BUTTON  */
+.ticket .ticket__wrapper .ticket__right .buy__btn {
+    margin-right: 2%;
+    border-radius: 5px;
+    background-color: #92278f;
+    color: #ffffff;
+    border: none;
+    width: 135px;
+    height: 46px;
+    font-weight: bold;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.ticket .ticket__wrapper .ticket__right .knowmore__btn {
+    border-radius: 5px;
+    background-color: #6fad24;
+    color: #ffffff;
+    border: none;
+    width: 135px;
+    height: 46px;
+    font-weight: bold;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.events_speaker {
+    font-family: 'Roboto', sans-serif;
+    background: url(../img/event-bg-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 130vh;
+    position: relative;
+    z-index: 100;
+    padding: 5% 0;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: white;
+    color: white;
+}
+.events_speaker .speaker__title {
+    margin: 0 0 40px 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+.events_speaker .speakers .speaker .speaker__image img {
+    width: 100%;
+}
+.events_speaker .speakers .speaker .speaker__image {
+    width: 100%;
+}
+.events_speaker .speakers .speaker .speaker__info {
+    margin: 10% 0;
+}
+.events_speaker .speakers .speaker .speaker__info h5 {
+    font-weight: bold;
+}
+.events_speaker .events__subscripe h4 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.events_speaker .events__subscripe input {
+    width: 100%;
+    padding: 2% 3%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+button, input {
+    overflow: visible;
+}
+.events_speaker .events__subscripe .subscribe__btn {
+    border-radius: 5px;
+    background-color: #cbd504;
+    color: #000000;
+    border: none;
+    width: 135px;
+    height: 60px;
+    font-weight: bold;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.events_speaker .events__subscripe .subscribe__btn:hover{
+    opacity: .9;
+}

@@ -1,0 +1,25 @@
+.stat .stat__item {
+    padding: 3.5% 0;
+    text-align: center;
+}
+.stat .stat__item h6 {
+    font-weight: bold;
+    color: white;
+}
+.stat .stat__item div {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.stat .stat__item span {
+    font-size: 3rem;
+    color: white;
+}
+.stat .stat__item h6 {
+    font-weight: bold;
+}
+.stat__number{
+    color: white;
+}
+h6 {
+    font-size: 1rem;
+}

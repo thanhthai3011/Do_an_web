@@ -32,5 +32,13 @@ namespace Do_an_web.Controllers
         {
             return View();
         }
+        public ActionResult Courses()
+        {
+            return View();
+        }
+        public ActionResult Event()
+        {
+            return View();
+        }
     }
 }
