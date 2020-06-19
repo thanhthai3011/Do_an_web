@@ -1,5 +1,5 @@
 /* NAV-BAR  */
-.header_navbar{
+/*.header_navbar{
     position: absolute;
     z-index: 9999;
     top: 0;
@@ -19,7 +19,7 @@
   .dropdown-navbar{
     position: relative;
     display: inline-block;
-  }
+  }*/
   
   /* Dropdown Content (Hidden by Default) */
 .dropdown-content {

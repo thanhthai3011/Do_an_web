@@ -19,8 +19,80 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7eaad007ea.js"></script>
     <link rel="stylesheet" href="~/Content/CSS/Event.css">
+    <link rel="stylesheet" href="~/Content/CSS/header.css">
+    <link rel="stylesheet" href="~/Content/CSS/footer.css">
 </head>
 <body>
+    <header>
+        <div class="container-fluid">
+            <div class="header_navbar">
+                <nav class=" navbar_heading navbar navbar-expand-md navbar-light bg-white">
+                    <a class="navbar-brand" href="#" target="blank">
+                        <img src="~/Content/img/logo/logo.svg" alt="logo" style="width: 100px;">
+                    </a>
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+                            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    @*@Html.ActionLink("Trang chủ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">@Html.ActionLink("Trang chủ", "Index", "Home")<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+
+                            <li class="nav-item dropdown dropdown-navbar">
+                                <a class="nav-link dropdown-toggle dropdown-course text-dark " data-toggle="dropdown" href="#">
+                                    Khóa học
+                                </a>
+                                <div class="dropdown-menu dropdown-content bg-light">
+                                    <a class="dropdown-item" href="#">Lập trình</a>
+                                    <a class="dropdown-item" href="#">Kinh doanh</a>
+                                    <a class="dropdown-item" href="#">Tài chính</a>
+
+                                    <a class="dropdown-item" href="#">Phát triển bản thân</a>
+                                    <a class="dropdown-item" href="#">Thiết kế</a>
+                                    <a class="dropdown-item" href="#">Marketing</a>
+                                    <a class="dropdown-item" href="#">Nâng tầm phong cách sống</a>
+                                    <a class="dropdown-item" href="#">Nhiếp ảnh</a>
+                                    <a class="dropdown-item" href="#">Sức khỏe</a>
+                                    <a class="dropdown-item" href="#">Âm nhạc</a>
+                                </div>
+                            </li>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">@Html.ActionLink("Blog", "About", "Home")<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">@Html.ActionLink("Sự kiện", "Contact", "Home")<span class="sr-only">(current)</span></a>
+                            </li>
+
+
+                        </ul>
+                        <!-- gio hang -->
+                        <ul class="navbar-nav ml-md-auto pr-3">
+                            <li class="nav-item active">
+                                <a class="nav-link text-dark" href="#">
+                                    <i class="fa fa-shopping-cart"></i><span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- ------------------------------------------ -->
+
+                        <div class="d-flex justify-content-start">
+
+                            <button class="btn btn-danger border border-dark rounded-0 mx-1" style="padding: 0 30px;"><a href="signup.html" class="text-white" target="_blank">Đăng kí</a></button>
+
+                            <button class="btn btn-light border border-dark rounded-0 text-secondary"><a href="login.html" class="text-secondary" target="_blank">Đăng nhập</a></button>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
     <section class="events">
         <div class="container countdown__wrapper">
             <div class="row ">
@@ -188,6 +260,138 @@
         </div>
     </section>
     </section>
+    <div class="container-fluid bg-light mt-5" style="border: 1px solid rgba(0,0,0,.1);">
+        <div class=" container  content-trusted">
+            <h5 class="text text-center col-12 py-3">Trusted by universities </h5>
+            <div class="d-flex justify-content-around">
+                <img src="~/Content/img/img-university/1200px-Logo-hcmut.svg.png" alt="" style="width: 10%; padding: 30px 0;">
+                <img src="~/Content/img/img-university/brasol-removebg-preview.png" alt=""
+                     style="width: 10%;  padding: 30px 0;">
+                <img src="~/Content/img/img-university/2-test1-removebg.png" alt="" style="width: 10%;  padding: 30px 0;">
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer font-small blue-grey lighten-5  ">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3 dark-grey-text">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 col-6 mb-4 mt-4 ">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">DoubleT company</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 160px;">
+                    <p>
+                        <a class="dark-grey-text font-weight-bold" href="#!">DoubleT for Business</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text font-weight-bold" href="#!">Teach on DoubleT</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text " href="#!">DoubleT app</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">About us</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 col-6 mx-auto mb-4  mt-4 ">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Products</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 90px;">
+
+                    <p>
+                        <a class="dark-grey-text" href="#!">MDBootstrap</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">MDWordPress</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">BrandFlow</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 col-6 mx-auto mb-4  mt-4 text-dark ">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold ">Useful links</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 120px;">
+                    <p>
+                        <a class="dark-grey-text" href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Help</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 col-6 mx-auto mb-md-0 mb-4  mt-4 text-dark ">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 75px;">
+                    <p>
+                        <i class="fa fa-home mr-3"></i>HCM 700000, VN
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i>doublet@gmail.com
+                    </p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i>+ 09 04 20 70 62
+                    </p>
+                    <p>
+                        <i class="fa fa-fax mr-3"></i>+ 028 35 15 70 88
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <hr>
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="footer-copyright text-left text-black-50 py-3 ">
+                    © 2020 Copyright:
+                    <a class="dark-grey-text pl-2" href="#"> Double'T, Inc</a>
+                </div>
+                <div class="footer-media">
+                    <p class="font-weight-bold text-center">Follow us on </p>
+                    <div class="media-social">
+                        <a class="p-2" href=""><i class="fa fa-facebook" style="color: #4267B2;"></i></a>
+                        <a class="p-2" href=""><i class="fa fa-twitter" style="color: #00A6E9;"></i></a>
+                        <a class="p-2" href=""><i class="fa fa-instagram" style="color: #F56040;"></i></a>
+                        <a class="p-2" href=""><i class="fa fa-youtube" style="color: #F70000;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+        </div>
+
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
